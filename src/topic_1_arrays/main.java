@@ -21,7 +21,7 @@ public class main {
 		for(int i=0; i< person.length; i++) {
 			System.out.println(person[i]);
 		}
-
+		
 	}
 
 }
