@@ -3,7 +3,6 @@ package topic_1_arraylist_operations;
 public class Main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		
 		 ItemManager manager = new ItemManager();
 
@@ -16,10 +15,14 @@ public class Main {
 	     manager.updateItem(0, "IT21");
 	     manager.updateItem(1, "Object Oriented Programming");
 	     
+	     System.out.println();
 	     manager.displayItems();
 	     manager.findItem("Data Structures and Algorithms");
 	     manager.findItem("Object Oriented Programming");
-
+	     
+	     System.out.println();
+	     manager.deleteItem(0);
+	     manager.displayItems();
 
 	}
 

@@ -15,7 +15,7 @@ public class ItemManager {
         System.out.println("Items in the list: " + items);
     }
     
-    // Method to insert an item
+    // Insert Item
     public void insertItem(String item) {
         items.add(item);
         System.out.println("Inserted: " + item);
@@ -31,7 +31,7 @@ public class ItemManager {
     	} 	
     }
     
-    // Method to find an item
+    // Find
     public int findItem(String item) {
         int index = items.indexOf(item);
         if (index != -1) {
@@ -42,6 +42,14 @@ public class ItemManager {
         return index;
     }
     
+    // Delete
+    public void deleteItem(int index) {
+        if (index >= 0 && index < items.size()) {
+            String removedItem = items.remove(index);
+            System.out.println("Deleted: " + removedItem);
+        } else {
+            System.out.println("Index out of bounds.");
+        }
+    }
     
-
 }
