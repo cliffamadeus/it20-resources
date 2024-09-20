@@ -12,6 +12,11 @@ public class Main {
 	     
 	     manager.displayItems();
 	     
+	     System.out.println();
+	     manager.updateItem(0, "IT21");
+	     manager.updateItem(1, "Object Oriented Programming");
+	     
+	     manager.displayItems();
 
 
 	}
