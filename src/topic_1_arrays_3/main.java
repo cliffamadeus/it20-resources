@@ -8,7 +8,7 @@ public class main {
 	            {1, 2, 3},
 	            {4, 5, 6},
 	            {7, 8, 9}
-	        };
+	     };
 	        
 	        // Printing the 2D array
 	        System.out.println("Matrix:");
