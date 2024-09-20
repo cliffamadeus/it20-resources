@@ -31,6 +31,17 @@ public class ItemManager {
     	} 	
     }
     
+    // Method to find an item
+    public int findItem(String item) {
+        int index = items.indexOf(item);
+        if (index != -1) {
+            System.out.println("Found: " + item + " at index " + index);
+        } else {
+            System.out.println(item + " not found.");
+        }
+        return index;
+    }
+    
     
 
 }

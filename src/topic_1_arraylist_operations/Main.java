@@ -17,6 +17,8 @@ public class Main {
 	     manager.updateItem(1, "Object Oriented Programming");
 	     
 	     manager.displayItems();
+	     manager.findItem("Data Structures and Algorithms");
+	     manager.findItem("Object Oriented Programming");
 
 
 	}
