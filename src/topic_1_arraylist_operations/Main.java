@@ -4,25 +4,25 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		 ItemManager manager = new ItemManager();
+		 ItemManager list = new ItemManager();
 
-	     manager.insertItem("IT20");
-	     manager.insertItem("Data Structures and Algorithms");
+		 list.insertItem("IT20");
+		 list.insertItem("Data Structures and Algorithms");
 	     
-	     manager.displayItems();
-	     
-	     System.out.println();
-	     manager.updateItem(0, "IT21");
-	     manager.updateItem(1, "Object Oriented Programming");
+		 list.displayItems();
 	     
 	     System.out.println();
-	     manager.displayItems();
-	     manager.findItem("Data Structures and Algorithms");
-	     manager.findItem("Object Oriented Programming");
+	     list.updateItem(0, "IT21");
+	     list.updateItem(1, "Object Oriented Programming");
 	     
 	     System.out.println();
-	     manager.deleteItem(0);
-	     manager.displayItems();
+	     list.displayItems();
+	     list.findItem("Data Structures and Algorithms");
+	     list.findItem("Object Oriented Programming");
+	     
+	     System.out.println();
+	     list.deleteItem(0);
+	     list.displayItems();
 
 	}
 
