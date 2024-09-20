@@ -1,5 +1,4 @@
 package topic_1_arraylist_operations;
-import java.util.ArrayList;
 
 public class Main {
 
@@ -8,10 +7,11 @@ public class Main {
 		
 		 ItemManager manager = new ItemManager();
 
-	        // Insert items
-	        manager.insertItem("Apple");
-	        manager.insertItem("Banana");
-	        manager.insertItem("Cherry");
+	     manager.insertItem("IT20");
+	     manager.insertItem("Data Structures and Algorithms");
+	     
+	     manager.displayItems();
+	     
 
 
 	}

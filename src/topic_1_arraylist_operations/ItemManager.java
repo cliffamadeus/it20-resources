@@ -9,5 +9,20 @@ public class ItemManager {
     public ItemManager() {
         items = new ArrayList<>();
     }
+    
+    // Display
+    public void displayItems() {
+        System.out.println("Items in the list: " + items);
+    }
+    
+    // Method to insert an item
+    public void insertItem(String item) {
+        items.add(item);
+        System.out.println("Inserted: " + item);
+    }
+    
+   
+    
+    
 
 }
