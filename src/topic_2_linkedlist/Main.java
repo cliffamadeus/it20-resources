@@ -11,6 +11,7 @@ public class Main {
         list.add(20);
         list.add(30);
         list.add(40);
+        list.printList();
 
 	}
 
