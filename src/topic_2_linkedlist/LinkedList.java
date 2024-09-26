@@ -1,7 +1,7 @@
 package topic_2_linkedlist;
 
 public class LinkedList {
-	private Node head; // Head of the list
+	private Node head; 
 
     // Method to add a new node at the end of the list
     public void add(int data) {
@@ -25,6 +25,26 @@ public class LinkedList {
             current = current.next;
         }
         System.out.println("null");
+    }
+    
+    // Method to delete a node by value
+    public void deleteByValue(int value) {
+        if (head == null) return;
+
+        // If the head needs to be removed
+        if (head.data == value) {
+            head = head.next;
+            return;
+        }
+
+        Node current = head;
+        while (current.next != null) {
+            if (current.next.data == value) {
+                current.next = current.next.next; 
+                return;
+            }
+            current = current.next;
+        }
     }
 
 }
