@@ -1,4 +1,4 @@
-package topic_2_linked_list;
+package topic_2_linkedlist;
 
 public class Node {
 	int data;  
