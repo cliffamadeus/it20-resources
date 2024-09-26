@@ -1,4 +1,4 @@
-package topic_2_linkedlist;
+package topic_2_linkedlist_int;
 
 public class Main {
 
@@ -20,7 +20,11 @@ public class Main {
         System.out.println("Current Linked List:");
         list.deleteByValue(20);
         list.printList();
-
+        
+        //Move/Swap Pointer
+        System.out.println();
+        System.out.println("Movingn/Swapping node from index 1 to index 0");
+        list.moveNodePointer(0, 1);
+        list.printList();
 	}
-
 }
