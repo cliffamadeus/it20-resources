@@ -16,7 +16,7 @@ public class Main {
         
         //Delete
         System.out.println();
-        System.out.println("Deleting 20 from the list...");
+        System.out.println("Deleting 2 from the list...");
         System.out.println("Current Linked List:");
         list.deleteByValue(20);
         list.printList();

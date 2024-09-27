@@ -12,18 +12,24 @@ public class Main {
         list.add("Cup of Joe, Janine - Tingin");
         list.add("Maki - Dilaw");
         System.out.println("Current Linked List:");
+        System.out.println("------------------------------");
         list.printList();
         
         //Delete
-        System.out.println();
-        System.out.println("Deleting 20 from the list...");
-        System.out.println("Current Linked List:");
         list.deleteByValue("Joe Lamont - Victims of Love");
+        System.out.println();
+        System.out.println("Deleting |Joe Lamont - Victims of Love| from the list...");
+        System.out.println();
+        System.out.println("Current Linked List:");
+        System.out.println("------------------------------");
         list.printList();
         
         //Move/Swap Pointer
         System.out.println();
         System.out.println("Moving/Swapping node from index 1 to index 0");
+        System.out.println();
+        System.out.println("Current Linked List:");
+        System.out.println("------------------------------");
         list.moveNodePointer(0, 1);
         list.printList();
 	}
