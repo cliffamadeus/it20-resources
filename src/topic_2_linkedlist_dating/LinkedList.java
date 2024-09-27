@@ -15,5 +15,16 @@ public class LinkedList {
 	        }
 	   }
 
-	 
+	  public void showProfiles() {
+	        Node current = head;
+	        if (current == null) {
+	            System.out.println("No profiles available.");
+	            return;
+	        }
+	        System.out.println("Profiles:");
+	        while (current != null) {
+	            System.out.println(current.data);
+	            current = current.next;
+	        }
+	  }
 }

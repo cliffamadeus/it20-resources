@@ -6,6 +6,10 @@ public class Main {
 		 LinkedList profiles = new LinkedList();
 	     profiles.add("Katelyn");
 	     profiles.add("Kent");
+	     
+	     profiles.showProfiles();
+	     System.out.println();
+	     
 
 	}
 
