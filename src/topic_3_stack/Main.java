@@ -10,7 +10,7 @@ public class Main {
         stack.push(30);
         
         System.out.println("Stack size is: " + stack.size());
-		
+        System.out.println("Top element is: " + stack.peek());
 
 	}
 
