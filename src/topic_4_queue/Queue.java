@@ -27,13 +27,21 @@ public class Queue {
         } else {
             System.out.print("Current queue: ");
             for (Customer customer : customers) {
-                System.out.print(customer.getName() + " ");
+                System.out.print(customer.getName() + " | ");
             }
             System.out.println();
         }
     }
     
+    public Customer dequeue() {
+        if (!isEmpty()) {
+            Customer customer = customers.removeFirst();
+            System.out.println(customer.getName() + " has been served.");
+            return customer;
+        } else {
+            System.out.println("The queue is empty.");
+            return null;
+        }
+    }
     
-	
-
 }
