@@ -14,8 +14,13 @@ public class Factorial {
 
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		
+		 Factorial calculator = new Factorial();
+	        
+	        int number = 5; // You can change this number to calculate a different factorial
+	        int result = calculator.factorial(number);
+	        
+	        System.out.println("Factorial of " + number + " is: " + result);
 	}
 
 }
