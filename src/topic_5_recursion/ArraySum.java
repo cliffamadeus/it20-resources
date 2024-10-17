@@ -1,4 +1,5 @@
 package topic_5_recursion;
+import java.util.Scanner;
 
 public class ArraySum {
 	
@@ -14,12 +15,15 @@ public class ArraySum {
 
 	public static void main(String[] args) {
 		
+		Scanner scanner = new Scanner(System.in);
 		ArraySum calculator = new ArraySum();
         
-        int[] numbers = {1, 2, 3, 4, 5}; 
-        int result = calculator.sum(numbers, numbers.length);
+		System.out.print("Enter the size of the array: ");
+        int size = scanner.nextInt();
         
-        System.out.println("Sum of the array is: " + result);
+        System.out.println("The size of the array is: " + size);
+        
+        scanner.close();
 		
 
 	}
