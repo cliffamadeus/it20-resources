@@ -14,6 +14,13 @@ public class ArraySum {
 
 	public static void main(String[] args) {
 		
+		ArraySum calculator = new ArraySum();
+        
+        int[] numbers = {1, 2, 3, 4, 5}; 
+        int result = calculator.sum(numbers, numbers.length);
+        
+        System.out.println("Sum of the array is: " + result);
+		
 
 	}
 
