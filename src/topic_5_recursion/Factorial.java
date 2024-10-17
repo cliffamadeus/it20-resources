@@ -1,4 +1,5 @@
 package topic_5_recursion;
+import java.util.Scanner;
 
 public class Factorial {
 	
@@ -15,12 +16,17 @@ public class Factorial {
 
 	public static void main(String[] args) {
 		
+		 Scanner scanner = new Scanner(System.in);
 		 Factorial calculator = new Factorial();
 	        
-	        int number = 5; // You can change this number to calculate a different factorial
-	        int result = calculator.factorial(number);
+	     System.out.print("Enter a number to calculate its factorial: ");
+	     int number = scanner.nextInt(); 
 	        
-	        System.out.println("Factorial of " + number + " is: " + result);
+	     int result = calculator.factorial(number);
+	        
+	     System.out.println("Factorial of " + number + " is: " + result);
+	        
+	     scanner.close(); 
 	}
 
 }
