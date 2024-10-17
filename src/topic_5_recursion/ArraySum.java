@@ -22,10 +22,22 @@ public class ArraySum {
         int size = scanner.nextInt();
         
         System.out.println("The size of the array is: " + size);
+        System.out.println();
+        
+        int[] numbers = new int[size];
+        
+        //Iterate throughout the array size
+        System.out.println("Enter the elements of the array:");
+        for (int i = 0; i < size; i++) {
+            numbers[i] = scanner.nextInt(); 
+        }
+        
+        int result = calculator.sum(numbers, size);
+        
+        System.out.println("Sum of the array is: " + result);
         
         scanner.close();
-		
-
+	
 	}
 
 }
